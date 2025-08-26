@@ -1,17 +1,21 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Code, Palette, Smartphone, Globe, Award, Users, Coffee, Heart } from "lucide-react"
+import { Code, Palette, Smartphone, Globe, Award, Users, Coffee, Heart, Phone } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 
 export default function AboutPage() {
   const skills = [
-    { name: "Frontend", icon: Code, items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js", "Angular"] },
-    { name: "Backend", icon: Globe, items: ["Node.js", "Python", "PostgreSQL", "MongoDB", "Express", "FastAPI"] },
-    { name: "Mobile", icon: Smartphone, items: ["React Native", "Flutter", "iOS", "Android", "Expo", "Ionic"] },
-    { name: "Design", icon: Palette, items: ["Figma", "Adobe XD", "UI/UX", "Prototyping", "Sketch", "InVision"] },
+    { name: "Lenguajes de Programación", icon: Code, items: ["Python", "JavaScript", "C++", "TypeScript"], subtitle: "Inglés: Nivel Intermedio B1" },
+    { name: "Backend y Frameworks", icon: Globe, items: ["Node.js", "Express", "Django", "TypeORM", "NestJs", "API REST", "Swagger"] },
+    { name: "Bases de Datos", icon: Smartphone, items: ["PostgreSQL (SQL)", "MongoDB (NoSQL)"] },
+    { name: "Frontend", icon: Palette, items: ["React", "Angular", "Ajax", "Axios", "Bootstrap", "CSS", "Tailwind", "Next.js", "HTML5"] },
+    { name: "Mobile", icon: Smartphone, items: ["React Native", "iOS", "Android", "Swift", "Android Studio"] },
+    { name: "DevOps y Colaboración", icon: Code, items: ["Git", "Docker", "Vercel", "Render"] },
+    { name: "Pruebas", icon: Globe, items: ["Jest", "Jasmine", "Postman", "Insomnia", "ThunderCli"] },
+    { name: "Soporte Técnico", icon: Phone, items: ["Mantenimiento de hardware", "Instalación de software", "Resolución de incidencias", "Asistencia al usuario"] },
   ]
 
   const stats = [
@@ -23,7 +27,6 @@ export default function AboutPage() {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Background */}
       <div className="fixed inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-blue-900/20 to-teal-900/20" />
         <div
@@ -37,7 +40,6 @@ export default function AboutPage() {
 
       <div className="relative z-10 py-20 px-6">
         <div className="container mx-auto max-w-6xl">
-          {/* Hero Section */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -54,7 +56,7 @@ export default function AboutPage() {
             </p>
           </motion.div>
 
-          {/* Stats */}
+          
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
             {stats.map((stat, index) => (
               <motion.div
@@ -74,7 +76,7 @@ export default function AboutPage() {
             ))}
           </div>
 
-          {/* About Text */}
+          
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -106,7 +108,7 @@ export default function AboutPage() {
             </Card>
           </motion.div>
 
-          {/* Skills */}
+          
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}

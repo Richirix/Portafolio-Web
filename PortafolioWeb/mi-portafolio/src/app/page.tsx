@@ -22,7 +22,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
-      {/* Animated Background */}
+     
       <div className="fixed inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-blue-900/20 to-teal-900/20" />
         <div
@@ -47,11 +47,11 @@ export default function HomePage() {
       <ProjectsSection />
       <ContactForm />
 
-      {/* Footer */}
+     
       <footer className="py-8 px-6 border-t border-white/10 relative z-10">
         <div className="container mx-auto text-center">
           <p className="text-gray-400">
-            © 2024 Mi Portfolio. Diseñado y desarrollado con <span className="text-red-400">&hearts;</span> usando
+            © 2025 Mi Portfolio. Diseñado y desarrollado con <span className="text-red-400">&hearts;</span> usando
             Next.js y Tailwind CSS
           </p>
         </div>
